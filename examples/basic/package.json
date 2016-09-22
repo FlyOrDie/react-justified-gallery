@@ -1,0 +1,15 @@
+{
+  "name": "react-justified-galery_basic_example",
+  "version": "0.0.1",
+  "description": "A basic example of react-justified-layout",
+  "author": "Andrey FlyOrDie Pavlov & Dadukin Alex",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/UniQLab/react-justified-layout/issues"
+  },
+  "homepage": "https://github.com/UniQLab/react-justified-layout#readme",
+  "dependencies": {
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "name": "react-justified-gallery",
+  "version": "0.0.1",
+  "description": "A nice gallery with justified layout. Based on flickr's justified layout",
+  "main": "dist/react-justified-gallery.js",
+  "browser": "dist/react-justified-gallery.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UniQLab/react-justified-gallery.git"
+  },
+  "keywords": [
+    "react",
+    "react-component",
+    "gallery",
+    "image",
+    "image-gallery",
+    "responsive",
+    "collage"
+  ],
+  "author": "Andrey FlyOrDie Pavlov & Dadukin Alex",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FlyOrDie/react-justified-gallery/issues"
+  },
+  "homepage": "https://github.com/FlyOrDie/react-justified-gallery#readme",
+  "scripts": {
+    "start": "cd ./examples/basic && ws --spa index.html"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.14.0",
+    "babel-core": "^6.10.0",
+    "babel-eslint": "^6.1.2",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-transform-class-properties": "^6.11.5",
+    "babel-plugin-transform-es2015-destructuring": "^6.9.0",
+    "babel-plugin-transform-object-rest-spread": "^6.8.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.11.1",
+    "browser-sync": "^2.16.0",
+    "del": "^2.2.2",
+    "eslint": "^3.5.0",
+    "eslint-config-airbnb": "^11.1.0",
+    "eslint-plugin-react": "^5.2.2",
+    "fs-extra": "^0.30.0",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-add": "0.0.2",
+    "gulp-babel": "^6.1.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-if": "^2.0.1",
+    "gulp-imagemin": "^3.0.3",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-replace-name": "^1.0.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^2.0.0",
+    "gulp-util": "^3.0.7",
+    "gulplog": "^1.0.0",
+    "handlebars": "^4.0.5",
+    "handlebars-loader": "^1.4.0",
+    "html-webpack-plugin": "^2.22.0",
+    "local-web-server": "^1.2.6",
+    "ncp": "^2.0.0",
+    "normalize.css": "^4.2.0",
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1",
+    "webpack-node-externals": "^1.4.3",
+    "webpack-stream": "^3.2.0"
+  },
+  "dependencies": {
+    "lodash": "^4.16.1",
+    "react-image-lightbox": "^3.1.0",
+    "react-layout-justified": "0.0.3"
+  }
+}
