@@ -42,13 +42,6 @@ var ReactJustifiedGallery = function (_Component) {
 
 		var _this = _possibleConstructorReturn(this, (ReactJustifiedGallery.__proto__ || Object.getPrototypeOf(ReactJustifiedGallery)).call(this, props));
 
-		_this.state = {
-			images: _this.indexImages(_this.props.images),
-			currentImageNum: null,
-			isOpen: false
-		};
-
-
 		_this.onBind();
 		return _this;
 	}
@@ -57,6 +50,7 @@ var ReactJustifiedGallery = function (_Component) {
 		key: 'onBind',
 		value: function onBind() {
 			this.render = this.render.bind(this);
+			this.init = this.init.bind(this);
 			this.closeLightbox = this.closeLightbox.bind(this);
 			this.generateInnerElements = this.generateInnerElements.bind(this);
 			this.generateImageInfoForLightbox = this.generateImageInfoForLightbox.bind(this);
@@ -66,6 +60,15 @@ var ReactJustifiedGallery = function (_Component) {
 			this.movePrev = this.movePrev.bind(this);
 			this.indexImages = this.indexImages.bind(this);
 			this.onImageClicked = this.onImageClicked.bind(this);
+		}
+	}, {
+		key: 'init',
+		value: function init() {
+			this.state = {
+				images: this.indexImages(this.props.images),
+				currentImageNum: null,
+				isOpen: false
+			};
 		}
 	}, {
 		key: 'calculateAspectRatio',
