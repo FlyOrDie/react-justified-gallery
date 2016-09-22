@@ -1,6 +1,6 @@
 {
   "name": "react-justified-gallery",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A nice gallery with justified layout. Based on flickr's justified layout",
   "main": "dist/react-justified-gallery.js",
   "browser": "dist/react-justified-gallery.js",
