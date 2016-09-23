@@ -54,7 +54,6 @@ var ReactJustifiedGallery = function (_Component) {
 			this.init = this.init.bind(this);
 			this.closeLightbox = this.closeLightbox.bind(this);
 			this.generateInnerElements = this.generateInnerElements.bind(this);
-			this.generateImageInfoForLightbox = this.generateImageInfoForLightbox.bind(this);
 
 			this.closeLightbox = this.closeLightbox.bind(this);
 			this.moveNext = this.moveNext.bind(this);
@@ -66,7 +65,7 @@ var ReactJustifiedGallery = function (_Component) {
 		key: 'init',
 		value: function init() {
 			this.state = {
-				images: this.indexImages(this.props.images),
+				images: this.props.images,
 				currentImageNum: null,
 				isOpen: false
 			};
@@ -91,8 +90,9 @@ var ReactJustifiedGallery = function (_Component) {
 
 			var images = this.props.images;
 
+			var indexedImages = this.indexImages(images);
 
-			return _lodash2.default.map(images, function (image, index) {
+			return _lodash2.default.map(indexedImages, function (image, index) {
 				var styles = {
 					width: '100%',
 					height: '100%',
@@ -103,9 +103,6 @@ var ReactJustifiedGallery = function (_Component) {
 				return _react2.default.createElement('div', { onClick: _this2.onImageClicked.bind(_this2, image.index), key: index, style: styles });
 			});
 		}
-	}, {
-		key: 'generateImageInfoForLightbox',
-		value: function generateImageInfoForLightbox() {}
 	}, {
 		key: 'indexImages',
 		value: function indexImages(images) {
