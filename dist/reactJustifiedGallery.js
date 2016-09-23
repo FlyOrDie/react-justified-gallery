@@ -129,7 +129,7 @@ var ReactJustifiedGallery = function (_Component) {
 	}, {
 		key: 'movePrev',
 		value: function movePrev() {
-			this.setState({ currentImageNum: (this.state.currentImageNum + this.state.currentImageNum.length - 1) % this.state.currentImageNum.length });
+			this.setState({ currentImageNum: (this.state.currentImageNum + this.state.images.length - 1) % this.state.images.length });
 		}
 	}, {
 		key: 'render',
@@ -159,7 +159,7 @@ var ReactJustifiedGallery = function (_Component) {
 				shouldDisplayLightbox && this.state.isOpen ? _react2.default.createElement(_reactImageLightbox2.default, _extends({
 					mainSrc: images[this.state.currentImageNum].imageMainUrl,
 					nextSrc: images[(this.state.currentImageNum + 1) % images.length].imageMainUrl,
-					prevSrc: images[(this.state.currentImageNum + images.length - 1) % images.length].currentImageNum,
+					prevSrc: images[(this.state.currentImageNum + images.length - 1) % images.length].imageMainUrl,
 
 					onCloseRequest: this.closeLightbox,
 					onMovePrevRequest: this.movePrev,
