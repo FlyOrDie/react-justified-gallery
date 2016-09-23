@@ -43,6 +43,7 @@ var ReactJustifiedGallery = function (_Component) {
 		var _this = _possibleConstructorReturn(this, (ReactJustifiedGallery.__proto__ || Object.getPrototypeOf(ReactJustifiedGallery)).call(this, props));
 
 		_this.onBind();
+		_this.init();
 		return _this;
 	}
 
@@ -147,10 +148,7 @@ var ReactJustifiedGallery = function (_Component) {
 
 			var justifiedLayoutOptions = _lodash2.default.pick(options, 'containerClass', 'boxClass', 'containerWidth', 'maxNumRows', 'containerPadding', 'boxSpacing', 'targetRowHeight', 'targetRowHeightTolerance');
 
-			console.log(options);
 			justifiedLayoutOptions.boxes = this.calculateAspectRatio();
-
-			if (images[this.state.currentImageNum]) console.log(images);
 
 			return _react2.default.createElement(
 				'div',
